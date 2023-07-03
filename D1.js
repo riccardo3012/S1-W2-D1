@@ -11,36 +11,41 @@ REGOLE
  Elenca e descrivi i principali datatype in JavaScript. Prova a spiegarli come se 
  volessi farli comprendere a un bambino. 
  /* SCRIVI QUI LA TUA RISPOSTA */
-/* I principali datatype in JavaScript sono: Stringa, Numerico e Booleano. 
- La stringa ci indichera o un singolo o piu caratteri ed è detto anche alfanumerico. 
+/* I principali datatype in JavaScript sono: Stringa, Numerico, Booleano, Nun e Undefined. 
+ La Stringa ci indichera o un singolo o piu caratteri ed è detto anche alfanumerico. 
  Il datatype Numerico rappresentera invece un dato a punto numerico sia intero sia 
- che decimale. Mentre per quanto riguarda il datatype Booleano ci permetterà di 
- assegnare un valore vero o falso */
+ che decimale. 
+ Il datatype Booleano ci permetterà di assegnare un valore vero o falso 
+ Il datatype Nun è un dato che incontriamo quando creiamo una variabile e non gli
+ assegnamo un valore intenzioanlmente 
+ Il datatype Undefined si rileva quando  qualcosa non è stato ben definito in una variabile a cui ho assegnato un valore.
 
 /* ESERCIZIO 2
  Crea una variable chiamata "name" e assegna ad essa il tuo nome, sotto forma di stringa.
 */
 
 let name = "Riccardo";
+console.log(name);
 
 /* ESERCIZIO 3
  Scrivi il codice necessario ad effettuare un addizione (una somma) dei numeri 12 e 20.
 */
 
 let firstnumber = 12;
-let secondnumber = 10;
-console.log("FinalNumber", firstnumber + secondnumber);
+let secondnumber = 20;
+console.log("Final Number", firstnumber + secondnumber);
 
 /* ESERCIZIO 4
  Crea una variable di nome "x" e assegna ad essa il numero 12.
 */
 
 let x = 12;
+console.log(x);
 
 /*ESERCIZIO 5
   Riassegna un nuovo valore alla variabile "name" già esistente: il tuo cognome.
   Dimostra l'impossibilità di riassegnare un valore ad una variabile dichiarata con il costrutto const.*/
-/*non posso farlo perhce è gia stato assegnato la variabile name*/
+/*Impossibile perche è gia stato assegnato la variabile name*/
 
 const lastname = "Ronca";
 console.log();
@@ -59,9 +64,20 @@ console.log("N", x - four);
  vengono trasformate in lowercase (senza cambiare il valore di name2!).
 */
 
+console.log("----------------------------------------------");
+
 let name1 = "john";
 let name2 = "John";
-let compare = name1 === name2.toLowerCase();
-console.log("primo nome", name1);
-console.log("secondo nome", name2);
-console.log("i nomi sono uguali?:", compare);
+var IsDifferent = name1 !== name2;
+console.log(IsDifferent);
+
+console.log("----------------------------------------------");
+
+let name3 = "john";
+let name4 = "John";
+let comparee = name1 === name2.toLowerCase();
+console.log("primo nome", name3);
+console.log("secondo nome", name4);
+console.log("i nomi sono uguali?:", comparee);
+
+console.log("----------------------------------------------");
